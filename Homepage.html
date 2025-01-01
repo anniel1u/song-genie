@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" >
+    <title> song recommender </title>
+    <link rel = "stylesheet" href = "Homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "homepage">
+        <h1> song genie </h1>
+       <h2> find your new favorite song </h2>
+        <button id = "startButton"> take the quiz </button>
+    </div>
+
+    <div id = "question1" class = "question">
+        <h1>first, pick a genre</h1>
+        <br> </br>
+        <div id = q1Answers> 
+            <button class = "answer" data-answer = "sweetBoy">indie</button>
+            <button class = "answer" data-answer = "tenThirtySix"> alt rock </button>
+            <button class = "answer" data-answer = "twoShadows"> r&b </button>
+            <button class = "answer" data-answer = "likeThat"> pop </button>
+            <button class = "answer" data-answer = "prettyWhenYouCry"> alt pop </button>
+            <button class = "answer" data-answer = "morningDew"> hip hop </button>
+        </div>
+    </div>
+
+    <div id = "question2" class = "question">
+        <h1> okay, which group of artists is your favorite? </h1>
+        <br> </br>
+        <div id = "q2Answers">
+            <button class = "answer" data-answer = "sweetBoy">steve lacy, dominic fike, daniel caesar</button>
+            <button class = "answer" data-answer = "tenThirtySix">clairo, faye webster, pinkpantheress</button>
+            <button class = "answer" data-answer = "twoShadows">tyler the creator, frank ocean, joey bada$$</button>
+            <button class = "answer" data-answer = "likeThat">keshi, HYBS, bixby</button>
+            <button class = "answer" data-answer = "prettyWhenYouCry"> mitski, chappell roan, billie eilish</button>
+            <button class = "answer" data-answer = "morningDew">a$ap rocky, jhene aiko, chris travis</button>
+        </div>
+    </div>
+
+    <div id = "question3" class = "question">
+        <h1>if the song i recommend was a drink, which one would it be?</h1>
+        <br> </br>
+        <div id = "q3Answers"> 
+            <button class = "answer" data-answer = "sweetBoy">sweet iced tea</button>
+            <button class = "answer" data-answer = "tenThirtySix">iced matcha latte</button>
+            <button class = "answer" data-answer = "twoShadows">espresso macchiato</button>
+            <button class = "answer" data-answer = "likeThat">milk tea w/ boba</button>
+            <button class = "answer" data-answer = "prettyWhenYouCry">red wine</button>
+            <button class = "answer" data-answer = "morningDew">mountain dew</button>
+        </div>
+    </div>
+
+    <div id = "question4" class = "question">
+        <h1> what do you want the song to smell like? </h1>
+        <br> </br>
+        <div id = "q4Answers"> 
+            <button class = "answer" data-answer = "sweetBoy">fresh baked cookies + warm vanilla</button>
+            <button class = "answer" data-answer = "tenThirtySix">rain-soaked earth + wildflowers</button>
+            <button class = "answer" data-answer = "twoShadows">amber + incense</button>
+            <button class = "answer" data-answer = "likeThat">citrus zest + sweet mango</button>
+            <button class = "answer" data-answer = "prettyWhenYouCry">rose petals + musk</button>
+            <button class = "answer" data-answer = "morningDew">pine forest + fog</button>
+        </div>
+    </div>
+
+    <div id = "question5" class = "question">
+        <h1> which of these colors speaks to you? </h1>
+        <br> </br>
+        <div id = "q5Answers"> 
+            <button id = "yellow" class = "answer color" data-answer = "sweetBoy"></button>
+            <button id = "pink" class = "answer color" data-answer = "tenThirtySix"></button>
+            <button id = "purple" class = "answer color" data-answer = "twoShadows"></button>
+            <button id = "cyan" class = "answer color" data-answer = "likeThat"></button>
+            <button id = "red" class = "answer color" data-answer = "prettyWhenYouCry"></button>
+            <button id = "blue" class = "answer color" data-answer = "morningDew"></button>
+        </div>
+    </div>
+
+    <div id = "result" class = "question">
+        <h1> ok, i found a song you'll like </h1>
+        <button id = "resultButton"> give me my song!!! </button>
+    </div>
+
+    <div id = "resultPage"> 
+        <h1> you got... </h1>
+        <img id = "resultImage" src = "https://i.ibb.co/3pMjLhj/question.jpg">
+        <h1 id = "resultTitle"> resultTitle </h1>
+        <iframe id = "resultAudio" controls></iframe>
+    </div>
+    <script src = "Quiz.js"></script>
+</body>
+</html>
