@@ -119,15 +119,15 @@ h2 {
 }
 
 #purple {
-    background-color: #35592f;
+    background-color: #592f3c;
 }
 
 #cyan {
-    background-color: #58abbf;
+    background-color: #6ac7de;
 }
 
 #red {
-    background-color: #3d0917;
+    background-color: #180c45;
 }
 
 #blue {
@@ -156,4 +156,12 @@ button:hover {
     background-color:#d9a879;
     transform: scale(1.05);
     color: #332605;
+}
+
+#resultAudio {
+    border-radius: 12px;
+    width: 90%;
+    height: 352;
+    border: 0;
+    margin: 20px;
 }
